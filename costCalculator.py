@@ -9,7 +9,7 @@ def loadRecipe(item):
 
 # Print the costs for an item
 def printCostsForItem(costs, item, amount, spacer):
-	print(f"{spacer}{item} : {costs[item]} = {str(round((costs[item]/64)*amount, 2))} stacks")
+	print(f"{spacer}{item} : {costs[item]*amount} = {str(round((costs[item]/64)*amount, 2))} stacks")
 	
 # Add an amount of ingredient to the costs
 # If an ingredient needs to be crafted, its ingredients will be considered
@@ -21,9 +21,9 @@ def addIngredients(item, costs, amount, recipe, spacer):
 		if item in costs:
 			costs[item] = costs[item] + amount
 			# This item's ingredients, is only the item itself
-			printCostsForItem({"redstone_dust":amount}, item, 1, spacer + '-')
+			printCostsForItem({"redstone_dust":amount}, item, amount, spacer + '-')
 		else:
-			costs[item] = float(recipe[item]) * amount
+			costs[item] = amount
 			printCostsForItem(costs, item, amount, spacer + '-')
 		return
 	
@@ -59,5 +59,6 @@ if __name__ == "__main__":
 	for item in sys.argv[1].strip().split(','):
 		# Call the first time, with the recipe already loaded
 		addIngredients(item.split(':')[0], costs, float(item.split(':')[1]), loadRecipe(item.split(':')[0]), '')
-			
+		print('------------------------------')
+		
 	printCosts(costs)
