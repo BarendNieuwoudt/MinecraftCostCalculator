@@ -21,7 +21,7 @@ def addIngredients(item, costs, amount, recipe, spacer):
 		if item in costs:
 			costs[item] = costs[item] + amount
 			# This item's ingredients, is only the item itself
-			printCostsForItem({"redstone_dust":amount}, item, amount, spacer + '-')
+			printCostsForItem({"redstone_dust":amount}, item, 1, spacer + '-')
 		else:
 			costs[item] = amount
 			printCostsForItem(costs, item, amount, spacer + '-')
