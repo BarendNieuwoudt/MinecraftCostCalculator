@@ -53,7 +53,7 @@ repeater
 -redstone_dust : 88.0 = 1.38 stacks
 ------------------------------
 redstone_dust
--redstone_dust : 30976.0 = 484.0 stacks
+-redstone_dust : 176.0 = 2.75 stacks
 ------------------------------
 
 Final Costs
