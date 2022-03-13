@@ -14,7 +14,7 @@ def printCostsForItem(costs, item, amount, spacer):
 # Add an amount of ingredient to the costs
 # If an ingredient needs to be crafted, its ingredients will be considered
 def addIngredients(item, costs, amount, recipe, spacer):
-	print(spacer + str(item))
+	print(f'{spacer}{item} ({amount})')
 	
 	if recipe is None:
 		# this doesnt require further crafting
