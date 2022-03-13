@@ -11,48 +11,48 @@ python costCalculator.py hopper:616,chest:528,barrel:176,redstone_torch:88,compa
 ```
 Output:
 ```
-hopper
--chest
---plank
+hopper (616.0)
+-chest (616.0)
+--plank (4928.0)
 ---log : 1232.0 = 19.25 stacks
 -iron_ingot : 3080.0 = 48.12 stacks
 ------------------------------
-chest
--plank
+chest (528.0)
+-plank (4224.0)
 --log : 1056.0 = 16.5 stacks
 ------------------------------
-barrel
--wood_slab
---plank
+barrel (176.0)
+-wood_slab (352.0)
+--plank (176.0)
 ---log : 44.0 = 0.69 stacks
--plank
+-plank (1056.0)
 --log : 264.0 = 4.12 stacks
 ------------------------------
-redstone_torch
--stick
---plank
+redstone_torch (88.0)
+-stick (88.0)
+--plank (44.0)
 ---log : 11.0 = 0.17 stacks
 -redstone_dust : 88.0 = 1.38 stacks
 ------------------------------
-comparator
--redstone_torch
---stick
----plank
+comparator (88.0)
+-redstone_torch (264.0)
+--stick (264.0)
+---plank (132.0)
 ----log : 33.0 = 0.52 stacks
 --redstone_dust : 264.0 = 4.12 stacks
 -quartz : 88.0 = 1.38 stacks
 -stone : 264.0 = 4.12 stacks
 ------------------------------
-repeater
--redstone_torch
---stick
----plank
+repeater (88.0)
+-redstone_torch (176.0)
+--stick (176.0)
+---plank (88.0)
 ----log : 22.0 = 0.34 stacks
 --redstone_dust : 176.0 = 2.75 stacks
 -stone : 264.0 = 4.12 stacks
 -redstone_dust : 88.0 = 1.38 stacks
 ------------------------------
-redstone_dust
+redstone_dust (176.0)
 -redstone_dust : 176.0 = 2.75 stacks
 ------------------------------
 
